@@ -1,0 +1,50 @@
+---
+import CardRec from "./Card_rec.astro";
+---
+
+<h1>Se indhold, som er udvalgt til dig</h1>
+<article>
+  <div class="wrapper">
+    <CardRec
+      billede="https://via.assets.so/album.png?id=8&q=95&w=360&h=360&fit=fill"
+      beskrivelse="Lil Wayne"
+    />
+    <CardRec
+      billede="https://via.assets.so/album.png?id=9&q=95&w=360&h=360&fit=fill"
+      beskrivelse="The Black Eyed Peas"
+    />
+    <CardRec
+      billede="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill"
+      beskrivelse="Rihanna"
+    />
+    <CardRec
+      billede="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill"
+      beskrivelse="Miley Cyrus"
+    />
+    <CardRec
+      billede="https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill"
+      beskrivelse="Michael Jackson"
+    />
+    <CardRec
+      billede="https://via.assets.so/album.png?id=10&q=95&w=360&h=360&fit=fill"
+      beskrivelse="Dierks Bentley"
+    />
+    <CardRec
+      billede="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill"
+      beskrivelse="Alan Jackson"
+    />
+  </div>
+</article>
+
+<style>
+  h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+</style>

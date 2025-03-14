@@ -1,0 +1,34 @@
+---
+import Searchbar from "./Searchbar.astro";
+---
+
+<nav>
+  <img
+    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png"
+    alt="spotify_logo"
+    class="logo"
+  />
+  <!-- <img src="home_icon" alt="home_icon" /> -->
+  <Searchbar />
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+    /* margin: auto; */
+  }
+
+  .logo {
+    width: 10%;
+    margin: 0 100px 0 0;
+  }
+
+  @media (min-width: 1000px) {
+    .logo {
+      width: 3%;
+      margin: 0 1000px 0 0;
+    }
+  }
+</style>

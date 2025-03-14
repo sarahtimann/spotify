@@ -1,11 +1,38 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from "../components/Header.astro";
+import Recommendations from "../components/Recommendations.astro";
+import Recommendations2 from "../components/Recommendations2.astro";
+import TopPlaylist from "../components/Top_playlist.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <TopPlaylist />
+      <Recommendations />
+      <Recommendations2 />
+    </main>
+  </body>
+</html>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background-image: linear-gradient(rgb(80, 80, 80), black);
+  }
+
+  main {
+    margin: 0 30px 0 30px;
+  }
+</style>

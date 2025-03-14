@@ -1,0 +1,23 @@
+---
+const { billede, beskrivelse } = Astro.props;
+---
+
+<article>
+  <img src={billede} />
+  <p>{beskrivelse}</p>
+</article>
+
+<style>
+  article {
+    color: #7a7a7a;
+  }
+
+  article img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>

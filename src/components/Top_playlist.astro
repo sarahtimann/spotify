@@ -1,0 +1,60 @@
+---
+import CardLastPlayed from "./Card_last_played.astro";
+---
+
+<article>
+  <CardLastPlayed
+    billede="https://picsum.photos/id/65/150/150"
+    overskrift="Gospel Unlimited"
+  />
+
+  <CardLastPlayed
+    billede="https://fastly.picsum.photos/id/68/150/150.jpg?hmac=th8Hnl1ahVopCkGnhzg0jTjXaDdKERDxRjFtPxBDABA"
+    overskrift="Hund i Snor"
+  />
+
+  <CardLastPlayed
+    billede="https://fastly.picsum.photos/id/76/150/150.jpg?hmac=s6UjGsYCF9dUT5dJOmmxGCkE3nhucdJQK7GvrwHPxIE"
+    overskrift="Romeo + Juliet"
+  />
+
+  <CardLastPlayed
+    billede="https://fastly.picsum.photos/id/240/150/150.jpg?hmac=30kgZxulnUCBINnxTct2fEltD1LJFmus5lnDnvGBRzo"
+    overskrift="Alene i Vildmarken"
+  />
+
+  <CardLastPlayed
+    billede="https://fastly.picsum.photos/id/331/150/150.jpg?hmac=4Tu4ArIWhVRcD6sL2GzkR3wPx3jBY49MQ0noLaz_X7Q"
+    overskrift="Hørt playliste"
+  />
+
+  <CardLastPlayed
+    billede="https://fastly.picsum.photos/id/325/150/150.jpg?hmac=DkXP5aIcNkURKWAX-JSN9YdCsgiAGYPEjfyOnt-6R8k"
+    overskrift="København i Hjertet"
+  />
+
+  <CardLastPlayed
+    billede="https://fastly.picsum.photos/id/334/150/150.jpg?hmac=Qvuco0o6vK-124Ocxhg8VwMCEN7otJpxtlPy_BwWjeQ"
+    overskrift="Ferie"
+  />
+
+  <CardLastPlayed
+    billede="https://fastly.picsum.photos/id/338/150/150.jpg?hmac=WB_H2RU1YD4_ooRAS9jvB2DfxRONRtlxJCA12gOBdVc"
+    overskrift="I bilen"
+  />
+</article>
+
+<style>
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
+  }
+
+  @media (max-width: 800px) {
+    article {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
