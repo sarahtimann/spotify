@@ -9,13 +9,14 @@ const { billede, beskrivelse } = Astro.props;
 
 <style>
   article {
-    background-color: rgb(32, 32, 32);
     color: #7a7a7a;
     margin: 10px;
+    grid-template-columns: auto;
   }
 
   article img {
     width: 200px;
+    border-radius: 5px;
   }
 
   p {
