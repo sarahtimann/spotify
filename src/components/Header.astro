@@ -17,10 +17,18 @@ import Searchbar from "./Searchbar.astro";
     display: flex;
     background-color: black;
     padding: 20px 10px 20px 10px;
+    /* margin: auto; */
   }
 
   .logo {
-    width: 3%;
-    margin: 0 1000px 0 0;
+    width: 10%;
+    margin: 0 100px 0 0;
+  }
+
+  @media (min-width: 1000px) {
+    .logo {
+      width: 3%;
+      margin: 0 1000px 0 0;
+    }
   }
 </style>
